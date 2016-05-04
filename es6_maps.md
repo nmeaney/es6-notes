@@ -28,20 +28,20 @@ The default Iterator for Maps is `entries()`.
 
 ```js
 // Create a Map and set a value to a key
-let someMap = new Map([[1, 'one']]);
+let someMap = new Map([[1, 'won']]);
 
-// Map.set will update the value if the key exists
+// Map.set() will update the value if the key exists
 let data = [[1, 'one'], [2, 'two'], [3, 'three'], [4, 'four']];
 for (let item of data) { someMap.set(...item); }
 
 // Map.set() is chainable
-someMap.set(0, 'ZERO')
+someMap.set(0, 'ZERO') // This will be inserted after other values
   .set(1, 'ONE')
   .set(2, 'TWO')
   .set(3, 'THREE')
   .set(4, 'FOUR');
 
-// Iterating Maps
+// Iterating Maps - Insertion order is preserved
 console.log('keys:', ...someMap.keys());
 console.log('values:', ...someMap.values());
 console.log('entries:', ...someMap.entries());
