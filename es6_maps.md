@@ -42,6 +42,8 @@ someMap.set(0, 'ZERO') // This will be inserted after other values
   .set(4, 'FOUR');
 
 // Iterating Maps - Insertion order is preserved
+// Note we use the ... spread operator to provide
+// individual Set items for display by console.log
 console.log('keys:', ...someMap.keys());
 console.log('values:', ...someMap.values());
 console.log('entries:', ...someMap.entries());
