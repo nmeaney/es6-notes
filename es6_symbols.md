@@ -73,10 +73,11 @@ It is best practice to namespace your App's Symbols to avoid name collisions.
 
 The `for()` method writes a Symbol to the Registry if it doesn't exist OR returns the existing Symbol.
 
-The `keyFor()` method returns the key associated with a Symbol, OR `undefined` if it doesn't exist.
+The `keyFor()` method returns the key associated with a Symbol, OR a `ReferenceError` if it doesn't exist.
 
 ```js
-// 'user_id' is the key in the Global Symbol Registry
+// 'user_id' is the key in the Global 
+// Symbol Registry for the 'uid' Symbol
 let uid = Symbol.for('user_id');
 
 console.log(Symbol.keyFor(uid)); // user_id
