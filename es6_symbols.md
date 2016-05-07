@@ -2,7 +2,7 @@
 
 > A Symbol is a unique and immutable data type and may be used as an identifier for Object Properties.
 
-Symbols are a new **Primitive Type** (joining Strings, Numbers, Boolean, null and undefined).
+Symbols are a new **Primitive Type** (joining `String`, `Number`, `Boolean`, `null` and `undefined`).
 
 Symbols do not have a literal form.
 
@@ -17,6 +17,9 @@ Symbol Properties are:
 - Non-enumerable by default
 - Discoverable (not private)
 
+
+### Use of Symbols
+
 Symbols can be used anywhere you can use a **Computed Property Name**, for example:
 
 - Classes
@@ -26,15 +29,6 @@ Symbols can be used anywhere you can use a **Computed Property Name**, for examp
 - `Object.defineProperties()`
 
 Symbols *cannot* be used with dot.notation.
-
-
-### Accessing Symbol Properties
-
-All Objects start off with zero own-Symbol properties (though they may have inherited Symbol Properties).
-
-You can access Symbol properties using `object.getOwnPropertySymbols()` which returns an array of Symbols.
-
-The `object.getOwnProperties()` method does not return Symbols, since Symbols are technically not property names.
 
 
 ### Examples
@@ -58,6 +52,15 @@ console.log(myObject[usernameSymbol]);
 // typeof returns 'symbol'
 console.log(typeof usernameSymbol);
 ```
+
+
+### Accessing Symbol Properties
+
+All Objects start off with zero own-Symbol properties (though they may have inherited Symbol Properties).
+
+You can access Symbol properties using `object.getOwnPropertySymbols()` which returns an array of Symbols.
+
+The `object.getOwnProperties()` method does not return Symbols, since Symbols are technically not property names.
 
 
 ### Global Symbol Registry
