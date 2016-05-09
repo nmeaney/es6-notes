@@ -52,7 +52,7 @@ console.log(firstName, lastName); Joe Bloggs
 
 ### Function Parameter Destructuring
 
-Function Parameter destructuring maps from a single function argument into multiple variables.
+Function Parameter Destructuring maps from a single function argument (e.g. an Object) into multiple variables in the function.
 
 ```js
 // Map from input Object Properties to individual variables
@@ -69,7 +69,7 @@ console.log(sayHello({ firstName: 'Joe', lastName: 'Bloggs' })); // Joe Bloggs
 
 ##### Destructuring & Default Values
 
-Destructuring can provide default values to variables.
+Destructuring can provide default values to function arguments.
 
 ```js
 // The first variable has a default value of 'Bill'
