@@ -23,16 +23,15 @@ console.log(someObject.someProperty); // 'Hello'
 Property names can be dynamically generated in Object Literals using square bracket notation.
 
 ```js
+let foo = () => 'bar';
 let someObject = {
 
-  foo: 'bar',
   ['prop_' + foo()]: 42,
-  ['year' + new Date().getYear()]: true
-
-}
+  ['prop_' + new Date().getYear()]: true
+};
 
 console.log(someObject.prop_bar); // 42
-console.log(someObject.year2016); // true
+console.log(someObject['prop_' + new Date().getYear()]); // true
 ```
 
 
@@ -47,7 +46,7 @@ Property names can be **Symbols**.
 
 The `function` keyword is no longer required for methods.
 
-A colon `:` is no longer required between a Property name and value.
+A colon `:` is no longer required between a method Property name it's function.
 
 Methods can be Generators which are indicated by a prefix asterisk: `*someMethod(x)`.
 
@@ -56,12 +55,12 @@ Arrow functions are *NOT* allowed in Object Literals.
 Comma separators are still required.
 
 ```js
-let name = 'Joe';
-
+// http://www.es6fiddle.net/io0esx6v/
+// Note - The generator method doesn't run in JSBin
 let someObject = {
 
   // The 'function' keyword is no longer required for methods
-  // A colon ':' is no longer required between a Property name and value
+  // A colon ':' is no longer required between a method name and value
   multiply(x) {
 
     return x * x;
@@ -83,6 +82,6 @@ let someObject = {
 let doubler = someObject.double(4);
 
 console.log(someObject.multiply(4)); // 16
-console.dir(doubler.next().value);   // 8
-console.dir(doubler.next().value);   // undefined - Generator has completed
+console.log(doubler.next().value);   // 8
+console.log(doubler.next().value);   // undefined - Generator has completed
 ```
