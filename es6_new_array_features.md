@@ -116,9 +116,9 @@ console.log(range(5, 10)); // [5, 6, 7, 8, 9, 10]
 
 Array.of() takes the type and amount of arguments and created an Array from them.
 
-For example, `Array.of(5)` creates an Array with one item  - the number 5 - `[5]`.
+For example, `Array.of(5)` creates an Array with one item - the number 5 - `[5]`.
 
-This is not the same as an Array seeded with a number (e.g. `new Array(3)`), which will create an array with 3 undefined items `[,,]`.
+This is not the same as an Array seeded with a number (e.g. `new Array(3)`), which will create an array of length 3 comprised of `undefined` items `[,,]`.
 
 ```js
 // Syntax: Array.of(data);
