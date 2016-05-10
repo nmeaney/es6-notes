@@ -1,9 +1,5 @@
 # ES6 New Number Features
 
-In ES6 some global Number functions have been moved under the Number Object namespace.
-
-In JavaScript numbers are either 64-bit Floats or 32-bit Integers.
-
 
 ### New Constants
 
@@ -59,6 +55,9 @@ console.log('Is Math.INFINITY finite?', Number.isFinite(Math.INFINITY)); // fals
 
 ### Number.parseInt() and Number.parseFloat()
 
-> Number.parseInt() and Number.parseFloat() convert Strings to Numbers.
+The global functions `parseInt` and `parseFloat` have been moved under the Number Object namespace with no change in functionality.
 
-The global functions `parseInt` and `parseFloat` have been moved to the Number Object with no change in functionality.
+
+### Notes
+
+In JavaScript numbers are either 64-bit Floats or 32-bit Integers.
