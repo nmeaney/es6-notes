@@ -9,6 +9,6 @@ There may be inaccuracies, incomplete or out-of-date information.
 
 ### Resources
 
+[es6Fiddle Online Code Editor](http://www.es6fiddle.net/)
 
 ### References
-
