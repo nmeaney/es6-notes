@@ -13,16 +13,16 @@ WeakMaps can have any arbitrary values.
 
 In a WeakMap, keys must be **Object References**.
 
-You **cannot iterate** the contents of a WeakMap.
+You cannot iterate the contents of a WeakMap.
 
-You **cannot clear** a WeakMap, but it does get garbage collected.
+You cannot clear a WeakMap, but it does get garbage collected.
 
 
 ### Garbage Collection
 
 Unlike a Map, a WeakMap doesn't prevent it's keys from being garbage collected, so there a no worries about memory leakage.
 
-If a key is Garbage Collected, it's related value will be subsequently garbage collected, since it is no longer referenced.
+If a key is garbage collected, it's related value will be subsequently garbage collected, since it is no longer referenced.
 
 
 ### Examples
