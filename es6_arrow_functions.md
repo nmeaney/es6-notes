@@ -7,7 +7,10 @@
 let square = [1, 2, 3].map(num => Math.pow(num, 2));
 
 // is equivalent to:
-let square = [1, 2, 3].map(function(num) { return Math.pow(num, 2) });
+let squareToo = [1, 2, 3].map(function(num) { return Math.pow(num, 2); });
+
+console.log(square); // 1, 4, 9
+console.log(squareToo); // 1, 4, 9
 ```
 
 Arrow functions can be passed to other functions as input parameters.
