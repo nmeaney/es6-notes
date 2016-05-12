@@ -45,16 +45,16 @@ Parentheses are *not* required for a single argument.
 ```js
 // An empty arrow function returns undefined
 // Parentheses are required if there are no arguments
-let empty = () => { };
+const empty = () => { };
 console.log(empty()); // undefined
 
 // Parentheses are required for multiple arguments
-let add = (a, b) => a + b;
-console.log(sum(4, 4)); // 8
+const add = (a, b) => a + b;
+console.log(add(4, 4)); // 8
 
 // Parentheses are not required for a single parameter
-let doubler = x => x * 2;
-console.log(add(44)); // 88
+const multiplier = a => a * a;
+console.log(multiplier(4));
 ```
 
 
@@ -67,7 +67,7 @@ The `return` keyword is implied in single expression statements.
 ```js
 // Curly braces are not required for single expression functions
 // return is implied in single expression statements
-let square = x => x * x;
+const square = x => x * x;
 // is equivalent to:
 // let square = function(x) { return x * x; }
 
