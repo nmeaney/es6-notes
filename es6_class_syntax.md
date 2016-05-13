@@ -5,10 +5,12 @@
 
 ### Class Syntax
 
+See comments: 
+
 ```js
 class User {
 
-  // Constructor (with a default value for Id)
+  // Constructor
   constructor(name) {
 
     // Class properties
@@ -28,36 +30,6 @@ class User {
 
     return 'I am not an administrator.';
   }
-}
-
-let standardUser = new User('Joe');
-
-console.log(standardUser.sayName());
-console.log(standardUser.isAdmin());
-
-
-class User {
-
-  // Constructor (with a default value for Id)
-  constructor(name, id = ${ Math.random() * 10e15 }) {
-
-    // Class properties
-    this.id = id;
-    this.name = name;
-    this.type = 'standard';
-  }
-
-  // Class methods
-  // The function keyword is not required
-  // Comma separators are not required
-  sayName() { console.log('Hi, I am', this.name); }
-  isAdmin() { return 'I am not an administrator.'; }
-
-  // Accessor Properties i.e. getters & setters
-  // must have the same name as the Property
-  id() { return this.id; }
-  name() { return this.name; }
-  name(newName) { this.name = newName; }
 }
 
 let standardUser = new User('Joe');
@@ -96,13 +68,9 @@ console.log(adminUser.isAdmin());
 ```
 
 
-### Accessor Properties - TODO
-
-Getters & setters.
-
-
 ### Static Properties & Methods - TODO
 
 Static properties and methods are inherited.
 
 When calling a static method, you must specify the 'class' name.
+
