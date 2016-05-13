@@ -11,7 +11,7 @@ There may be inaccuracies, incomplete or out-of-date information.
 
 [es6Fiddle - Online ES6 Playground.](http://www.es6fiddle.net/)
 
-[Learn ES6 by doing it.](http://es6katas.org/)
+[ES6 Katas - Learn ES6 by doing it.](http://es6katas.org/)
 
 
 ### References
