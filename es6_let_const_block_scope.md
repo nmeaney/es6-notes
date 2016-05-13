@@ -4,12 +4,14 @@
 
 This means they can only be accessed in that block. They are not hoisted.
 
+You cannot use `let` or `const` variables before you've defined them.
+
 Variables declared with `let` can be redefined (i.e. their value can be changed).
 
 Variables declared with `const` *cannot* be redefined (i.e. they are immutable).
 
 
-### let
+### `let`
 
 Variables assigned with `let` can have their value changed.
 
@@ -22,9 +24,13 @@ console.log(myVariable);
 ```
 
 
-### const
+### `const`
+
+You must assign a value to a `const` variable when you create it.
 
 Variables assigned with `const` are immutable; they cannot be changed.
+
+Attempting to change a `const`-declared variable will cause a `TypeError`.
 
 ```js
 const someCalculation = a => {
@@ -70,6 +76,6 @@ console.log(multiplier(2)); // Uncaught ReferenceError: multiplier is not define
 
 ### Temporal Dead Zone
 
-Since `let` and `const` variables are not hoisted, they cannot be used in a block until after they are declared.
+Since `let` and `const` variables are not hoisted, they cannot be used in a block until after they are defined.
 
 The 'space' between the start of a block and the declaration of a variable with `let` and `const`, is known as the Temporal Dead Zone (TDZ).
