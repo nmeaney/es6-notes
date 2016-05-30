@@ -32,8 +32,7 @@ This means that you don't need to use something like `var self = this;` in order
 An empty Arrow Function returns `undefined`.
 
 ```js
-let empty = () => { };
-
+const empty = () => { };
 console.log(empty()); // undefined
 ```
 
@@ -46,10 +45,9 @@ Parentheses are required for multiple arguments.
 Parentheses are *not* required for a single argument.
 
 ```js
-// An empty arrow function returns undefined
 // Parentheses are required if there are no arguments
-const empty = () => { };
-console.log(empty()); // undefined
+const empty = () => 'no arguments';
+console.log(empty()); // no arguments
 
 // Parentheses are required for multiple arguments
 const add = (a, b) => a + b;
